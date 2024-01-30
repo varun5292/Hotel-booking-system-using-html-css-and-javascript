@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href = "https://cdn.dribbble.com/users/4031439/screenshots/10789004/media/4b07136e303947c2f2075b5b1995cf20.jpg?compress=1&resize=400x300&vertical=center" type = "image/png">
+    <title>Blue Berry group of Hotels</title>
+    <style>
+
+body{
+  background-color: aqua;
+}
+#image
+{
+    background-image: url("https://www.usnews.com/object/image/00000178-f501-d258-a5f9-fdd742a40000/esperanza-at-night.jpg?update-time=1678804883827&size=responsive640");
+    background-repeat: no-repeat;
+    padding: 50px;
+    background-size: 100%;
+    color: rgb(7, 143, 123);
+}
+.flex-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  height:300px;
+  width: 300px;
+  overflow: hidden;
+  
+  
+}
+.flex-container>div:hover
+{
+  height: 200%;
+  z-index: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 9px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 2s;
+}
+
+.sidenav a:hover {
+  color: #ae3f3f;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#about
+{
+  background-image:url("https://media-cdn.tripadvisor.com/media/photo-s/15/db/57/ea/caravela-beach-resort.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  opacity: 0.8;
+}
+.flex-container1 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-left: 100px;
+}
+.fih{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+
+}
+.menu-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flex-container1 > div {
+  background-color: #f1f1f1;
+  margin: 5px;
+  padding: 10px;
+  padding-left: 60px;
+  width: 300px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: #818181;
+  overflow: hidden;
+}
+.menu-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.menu-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #a7a2a291;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-buttons a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.menu-buttons a:hover {
+  background-color: #555;
+}
+
+</style>
+</head>
+<body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+      <div style="background-color: gray;display: flex;">
+      <div style="font-size:30px;cursor:pointer;text-align: center;color: #f1f1f1;padding-top: 10px;padding-left: 10px;" onclick="openNav()">&#9776; MENU</div>
+      <div style="font-size: 50px;color: white;text-align: center;padding-left: 400px;"> &#129381;Blue Berry group of Hotels</div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="advv.html">Services</a>
+    <a href="biryani.html">Food menu</a>
+    <a href="#About">About Us</a>
+    <a href="login.html">Logout</a>
+  </div>
+  
+    <div id="image">
+      
+           <h1 style="text-align: center;font-size: 50px;color: rgb(214, 58, 58);">WELCOME TO BLUE BERRY HOTELS</h1>
+           <button ></button><br><br>
+    <div class="menu-buttons">
+      <a href="goa.html">GOA</a>
+      <a href="varkala.html">VARKALA</a>
+      <a href="hawaii.html">HAWAII</a>
+      <a href="phuket.html">PHUKET</a>
+    </div>
+    <br><br><br>
+           <div class="flex-container">
+            <div>
+                <img src="data:image/jpeg;base64,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" alt="">
+                <h1 style="color: black; text-align: center;">GOA</h1>
+                <p>The magical land of Goa is a land of celebrations and festivities. Snuggled in the Konkan Coast Belt, It has a long coastline of approx 100 kilometers. Goa is primarily known for its beautiful beaches which are engrossed with oscillating palm trees and an astonishing nightlife.</p>
+            </div>
+            <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRYaiAP-1LNKOzV8lTT9Fh5aoZJ3YHXa4E4Q&usqp=CAU" alt="">
+              <h1 style="color: black; text-align: center;">VARKALA</h1>
+              <p>Varkala is a coastal town in the southern part of Kerala known for the unique 15m high 'Northern Cliff' adjacent to the Arabian Sea. It is popular for its hippie culture, shacks on the cliff serving great seafood and playing global music </p>
+            </div>
+            <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRiXSIx2byjfBEZDBn-MyAEYYk6DeEjGdH6A&usqp=CAU" alt="">
+              <h1 style="color: black; text-align: center;">HAWAII</h1>
+              <p>The state features numerous beaches with scenic views, several active volcanoes, and warm but temperate climate. All of these make Hawaii an attractive retreat for a variety of people starting from surfers and tourists to volcanologists and astronomers.</p>
+            </div>
+            <div>
+              <img src="https://v2umbapi.travelbag.co.uk/media/lhcfzrjs/phromthep-cape-viewpoint-at-sunset-in-phuket.jpg?center=0.5,0.5&mode=Crop&quality=80&width=300&height=174" alt="">
+              <h1 style="color: black; text-align: center;">PHUKET</h1>
+              <p>Phuket is famous for a number of things like exotic beaches, vibrant nightlife, colorful night markets, delicious seafood, white marble Big Buddha and of course scuba diving.</p>
+              <br><br><br><br>
+            </div>
+          </div>
+    </div>
+    <div style="background-color: #818181;color: #f1f1f1;">
+      <section id="About">
+       <div class="fih"><I>ABOUT US</I></div>
+      
+       <div id="about">
+        <p style="color: rgb(0, 0, 0);font-size: 25px;padding-left: 10px;"><br><br><br><br>At Hotel Blue berry, we pride ourselves on providing exceptional hospitality and creating memorable experiences for our guests. We understand that choosing the right hotel for your stay is an important decision, and we want to ensure that your time with us exceeds your expectations.</p><br><br>
+        <div class="menu-container">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a><br><br>
+          <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a><br><br>
+          <a href="#"> <i class="fas fa-envelope"></i> amrita@gmail.com </a><br><br>
+          <a href="#"> <i class="fas fa-envelope"></i> banglore@gmail.com </a><br><br>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> hyderabad, india - 400104 </a><br>
+          </div>
+        <B style="padding-left: 700px;color: rgb(255, 255, 255);font-size: 30px;">REVIEWS</B><br><br><br><br>
+         
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5T9I0waCTyC0qo4yiQw59LpnZibCULR24QAp-0Y9JMvx03KYSwjhD8NxRdlQeDh7-_bk&usqp=CAU"alt="Item 1">
+          <div>
+            <h3>"I recently had the pleasure of staying at the Hotel Blue Berry, a 5-star hotel, and I must say that it exceeded all of my expectations. From the moment I arrived, I was greeted by the warm and friendly staff who made me feel like a valued guest."</h3>
+          </div>
+        </div>
+    
+          
+        <div class="menu-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sundar_pichai.png/220px-Sundar_pichai.png"alt="Item 1">
+          <div>
+            <h3>"I recently had the pleasure of staying at the Blue Berry during my vacation, and I must say it was an extraordinary experience from start to finish. This luxurious 5-star hotel exceeded all my expectations, leaving me with unforgettable memories that will last a lifetime. Here's why I believe HOTEL Blue Berry deserves every bit of its stellar reputation."</h3>
+          </div>
+        </div>
+    
+        <div class="menu-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHsNkqhQ3RrSTSTHwUvI_-C39ZH9baLDhAg&usqp=CAU"alt="Item 1">
+          <div>
+            <h3>"I recently had the pleasure of staying at the Hotel coconut during my vacation, and I must say it was an extraordinary experience from start to finish. This luxurious 5-star hotel exceeded all my expectations, leaving me with unforgettable memories that will last a lifetime. Here's why I believe HOTEL Coconut deserves every bit of its stellar reputation."</h3>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking</title>
+  <style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/bank-card-coin-withdrawal-money-money-payment-symbol-vector-illustration_587448-912.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+    .weight-dropdown {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .radio-group {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .radio-group input[type="radio"] {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 100px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    .menu-buttons {
+      text-align: center;
+    }
+
+    .menu-buttons button.submit {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="confirm.html"></form>
+    <h1>Hotel Booking</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <br><br>
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="persons">Number of Persons:</label>
+      <input type="number" id="persons" required>
+      <br><br>
+      <label for="aadhar">Aadhar Number:</label>
+      <input type="number" id="aadhar" required>
+      <br><br>
+      <label>Hotel Branch:</label>
+      <div class="radio-group">
+        <input type="radio" id="goa" name="hotelBranch" value="goa" required>
+        <label for="goa">GOA</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="haw" name="hotelBranch" value="haw" required>
+        <label for="haw">HAWAII</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="var" name="hotelBranch" value="var" required>
+        <label for="var">VARKALA</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="phu" name="hotelBranch" value="phu" required>
+        <label for="phu">PHUKET</label>
+      </div>
+      <br><br>
+      <label for="w">Select Package:</label>
+      <select class="weight-dropdown">
+        <option value="5000">2000 rs per day for Bridal bingo</option>
+        <option value="1000">3000 rs per day for Cottage suites</option>
+        <option value="2000">5000 rs per day for Family Celebrations</option>
+        <option value="3000">7000 rs per day for Buissness Suites</option>
+      </select>
+      <br><br>
+      <label for="checkIn">Check-In Date:</label>
+      <input type="date" id="checkIn" required>
+      <br><br>
+      <label for="checkOut">Check-Out Date:</label>
+      <input type="date" id="checkOut" required>
+      <br><br>
+      <label>Payment Method:</label>
+      <div class="radio-group">
+        <input type="radio" id="upi" name="paymentMethod" value="upi" required>
+        <label for="upi">UPI</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="card" name="paymentMethod" value="card" required>
+        <label for="card">Card</label>
+      </div>
+      <br><br>
+      <label for="upiId">UPI ID:</label>
+      <input type="text" id="upiId" required>
+      <br><br>
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" required>
+      <br><br>
+      <label for="cardExpiry">Card Expiry Date:</label>
+      <input type="text" id="cardExpiry" required>
+      <br><br>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" required>
+      <br><br>
+      <div class="menu-buttons">
+        <button class="submit" onclick="paymentForm()">Make payment</button>
+      </div>
+      
+      
+    </form>
+  </div>
+  <script>
+      function paymentForm() {
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var aadhar = document.getElementById("aadhar").value;
+        var upi = document.getElementById("upi").value;
+        var card = document.getElementById("card").value;
+        var cvv = document.getElementById("cvv").value;
+    
+        if (name !== "" && phone !== "" && email !== "" && aadhar !== "" && upi !== "" && card !== "" && cvv !== "") {
+          console.log("name:", name);
+          console.log("phone:", phone);
+          console.log("email:", email);
+          console.log("aadhar:", aadhar);
+          console.log("upi:", upi);
+          console.log("card:", card);
+          console.log("cvv:", cvv);
+          window.location.href = "confirm.html"; // Redirect to confirm.html
+        } else {
+          alert("Please fill in all the required fields.");
+        }
+      }
+    </script>
+</body>
+</html>
